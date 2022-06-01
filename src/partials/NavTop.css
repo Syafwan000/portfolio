@@ -1,0 +1,31 @@
+.navtop {
+    background-color: var(--fourth-color);
+    /* border-bottom: 1px solid black; */
+}
+
+.navtop-brand {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 28px !important;
+    font-weight: 600;
+}
+
+i#normal {
+    font-weight: 500;
+}
+
+.navtop-list a {
+    font-family: 'Manrope', sans-serif;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.active {
+    border-bottom: 1px solid #000;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000 !important;
+}
+
+.navtop-list a:hover {
+    color: #000;
+}

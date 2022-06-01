@@ -1,0 +1,35 @@
+footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: var(--fourth-color);
+    /* border-top: 1px solid black; */
+}
+
+.foot-right, .foot-left {
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+}
+
+.foot-right p {
+    color: #000;
+    margin-bottom: 0;
+    padding: 8px;
+}
+
+.foot-left a {
+    color: #000;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.foot-left a:hover {
+    color: #000;
+}
+
+.foot-icon {
+    font-size: 16px;
+}
