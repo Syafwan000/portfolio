@@ -1,0 +1,23 @@
+.skills-left {
+    width: 300px;
+}
+
+.skills-right {
+    width: 750px;
+}
+
+.skills-left h3, .skills-left h4 {
+    cursor: default;
+}
+
+.skills-left h3 {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    margin: 0px;
+}
+
+.skills-left h4 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+}

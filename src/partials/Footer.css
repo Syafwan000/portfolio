@@ -14,19 +14,19 @@ footer {
     font-size: 14px;
 }
 
-.foot-right p {
+.foot-left p {
     color: #000;
     margin-bottom: 0;
     padding: 8px;
 }
 
-.foot-left a {
+.foot-right a {
     color: #000;
     text-decoration: none;
     padding: 8px;
 }
 
-.foot-left a:hover {
+.foot-right a:hover {
     color: #000;
 }
 

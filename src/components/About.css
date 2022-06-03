@@ -1,0 +1,49 @@
+.about-left {
+    width: 300px;
+}
+
+.about-right {
+    width: 750px;
+}
+
+.about-left h3, .about-left h4 {
+    cursor: default;
+}
+
+.about-left h3 {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    margin: 0px;
+}
+
+.about-left h4 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+}
+
+.about-right p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.about-right h4 {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    line-height: 12px;
+    margin: 0;
+}
+
+.certificates-wrapper {
+    height: 365px;
+    padding: 0px 12px 12px 12px;
+    margin-top: 8px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.certificates-ratio img {
+    width: 210px;
+    border-radius: .25rem;
+}

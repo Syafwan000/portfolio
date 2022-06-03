@@ -7,7 +7,7 @@ function NavTop() {
         <>
             <Navbar className="navtop py-3">
                 <Container fluid className="px-4">
-                <Navbar.Brand className="navtop-brand" href="#home">Syaf<i id="normal">wan</i>.</Navbar.Brand>
+                <Navbar.Brand className="navtop-brand">Syaf<i id="normal">wan</i>.</Navbar.Brand>
                     <Nav className="navtop-list ms-auto">
                         <Nav.Link className="pe-3"><NavLink to="/" activeClassName="active">Home</NavLink></Nav.Link>
                         <Nav.Link className="pe-3"><NavLink to="/about" activeClassName="active">About</NavLink></Nav.Link>
