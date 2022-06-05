@@ -15,6 +15,7 @@
     font-family: 'Manrope', sans-serif;
     font-weight: 200;
     font-size: 30px;
+    cursor: default;
 }
 
 .home-left h2 span.name-hover:hover {
@@ -38,8 +39,11 @@ img.home-image {
     font-weight: 600;
     color: var(--fourth-color);
     background-color: var(--first-color);
+    transition: 0.5s;
 }
 
 .btn-download:hover {
-    color: var(--fourth-color);
+    color: var(--first-color);
+    background-color: var(--third-color);
+    box-shadow: 0px 0px transparent;
 }

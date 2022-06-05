@@ -1,0 +1,88 @@
+.projects-title h3 {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    margin: 0px;
+}
+
+.projects-title h4 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+}
+
+.projects-wrapper {
+    height: 420px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.project-card {
+    width: 300px;
+    background-color: var(--third-color);
+    border-radius: .3rem;
+    padding-bottom: 16px;
+}
+
+.project-card img {
+    width: 300px !important;
+    padding: 16px 16px 12px 16px;
+    border-radius: .3rem;
+}
+
+.project-card .project-content {
+    padding: 0 16px 0 16px;
+}
+
+.project-card .project-content h3 {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.project-card .project-content p {
+    font-family: 'Manrope', sans-serif;
+}
+
+a.btn-website, a.btn-github {
+    font-family: 'Manrope', sans-serif;
+    text-decoration: none;
+    color: var(--fourth-color);
+    padding: 6px 8px 6px 8px;
+    border-radius: .3rem;
+    font-size: 14px;
+}
+
+a.btn-website:hover, a.btn-github:hover {
+    color: var(--fourth-color);
+}
+
+a.btn-website {
+    margin-right: 6px;
+    background-color: #0D6EFD;
+}
+
+a.btn-github {
+    background-color: #000;
+}
+
+.project-icon {
+    font-size: 20px;
+    padding-bottom: 3px;
+}
+
+.tech-stack-wrapper {
+    width: 600px;
+    height: auto;
+    margin-top: 16px;
+}
+
+span#tech-stack {
+    background-color: var(--first-color);
+    font-family: 'Manrope', sans-serif;
+    color: var(--fourth-color);
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 6px;
+    padding: 4px 8px 4px 8px;
+    border-radius: .3rem;
+}

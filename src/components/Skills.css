@@ -21,3 +21,22 @@
     font-family: 'Manrope', sans-serif;
     font-size: 20px;
 }
+
+i.colored {
+    border: 1px solid transparent;
+    padding: 12px;
+    margin: 12px;
+    font-size: 70px;
+    transition: .5s;
+}
+
+i.devicon-visualstudio-plain.colored {
+    color: #3380B4;
+}
+
+i.colored:hover {
+    border: 1px solid #000;
+    background-color: rgb(231, 231, 231);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
