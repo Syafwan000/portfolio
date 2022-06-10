@@ -30,3 +30,7 @@ a.arrow {
 a.arrow:hover {
     color: #000;
 }
+
+.side-title, .side-date, .side-number {
+    cursor: default;
+}

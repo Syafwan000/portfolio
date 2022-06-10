@@ -14,11 +14,15 @@ import Certificate12 from "../assets/img/Certificate12.png";
 import Certificate13 from "../assets/img/Certificate13.png";
 import Certificate14 from "../assets/img/Certificate14.png";
 import Certificate15 from "../assets/img/Certificate15.png";
+import Helmet from "react-helmet";
 import "./About.css";
 
 function About() {
     return (
         <>
+            <Helmet>
+                <title>Syafwan - About</title>
+            </Helmet>
             <Container className="d-flex justify-content-between">
                 <div className="about-left text-center d-flex justify-content-center align-items-center flex-column">
                     <h3>About</h3>

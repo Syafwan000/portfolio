@@ -18,6 +18,7 @@ footer {
     color: #000;
     margin-bottom: 0;
     padding: 8px;
+    cursor: default;
 }
 
 .foot-right a {

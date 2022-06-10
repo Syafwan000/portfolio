@@ -1,10 +1,27 @@
 import { AiOutlineMail, AiFillGithub, AiFillLinkedin, AiFillInstagram, AiOutlineArrowRight } from "react-icons/ai";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 import { Container } from "react-bootstrap";
+import { FiCopy } from "react-icons/fi";
+import { useState } from "react";
+import Helmet from "react-helmet";
 import "./Contact.css";
 
 function Contact() {
+    const [alreadyCopy, setAlreadyCopy] = useState("Copy");
+
+    function actionCopy() {
+        setAlreadyCopy("Copied");
+
+        setTimeout(function() {
+            setAlreadyCopy("Copy");
+        }, 1000);
+    }
+
     return (
         <>
+            <Helmet>
+                <title>Syafwan - Contact</title>
+            </Helmet>
             <Container className="d-flex justify-content-between">
                 <div className="contact-left text-center d-flex justify-content-center align-items-center flex-column">
                     <h3>Contact</h3>
@@ -16,6 +33,9 @@ function Contact() {
                             <div className="email-wrapper">
                                 <h3><AiOutlineMail />&nbsp;&nbsp;Email</h3>
                                 <p>muhammadsyafwan04@gmail.com</p>
+                                <CopyToClipboard  text="muhammadsyafwan04@gmail.com">
+                                    <button className="btn-copy" onClick={actionCopy}>{alreadyCopy}&nbsp;&nbsp;<FiCopy /></button>
+                                </CopyToClipboard>
                             </div>
                         </div>
                         <div className="col">

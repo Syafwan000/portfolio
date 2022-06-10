@@ -1,9 +1,13 @@
 import { Container } from "react-bootstrap";
+import Helmet from "react-helmet";
 import "./Skills.css";
 
 function Skills() {
     return (
         <>
+            <Helmet>
+                <title>Syafwan - Skills</title>
+            </Helmet>
             <Container className="d-flex justify-content-between">
                 <div className="skills-left text-center d-flex justify-content-center align-items-center flex-column">
                     <h3>Skills</h3>

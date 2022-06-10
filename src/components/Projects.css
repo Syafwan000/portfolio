@@ -37,10 +37,12 @@
     font-family: 'Archivo', sans-serif;
     font-weight: 700;
     font-size: 24px;
+    cursor: default;
 }
 
 .project-card .project-content p {
     font-family: 'Manrope', sans-serif;
+    cursor: default;
 }
 
 a.btn-website, a.btn-github {

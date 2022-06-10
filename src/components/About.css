@@ -26,6 +26,7 @@
     font-family: 'Manrope', sans-serif;
     font-size: 20px;
     margin-bottom: 24px;
+    cursor: default;
 }
 
 .about-right h4 {
@@ -33,6 +34,7 @@
     font-weight: 700;
     line-height: 12px;
     margin: 0;
+    cursor: default;
 }
 
 .certificates-wrapper {

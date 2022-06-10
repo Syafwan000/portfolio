@@ -31,17 +31,10 @@
     box-shadow: 8px 8px rgba(0, 0, 0, 0.4);
 }
 
-.email-wrapper {
-    height: 128px;
-}
-
 .email-wrapper h3, .linkedin-wrapper h3,
 .github-wrapper h3, .instagram-wrapper h3 {
     font-family: 'Archivo', sans-serif;
-}
-
-.email-wrapper h3 {
-    margin-bottom: 12px;
+    cursor: default;
 }
 
 .email-wrapper p, .linkedin-wrapper p,
@@ -49,6 +42,7 @@
     font-family: 'Manrope', sans-serif;
     font-style: italic;
     margin: 0;
+    cursor: default;
 }
 
 a.btn-direct {
@@ -61,9 +55,29 @@ a.btn-direct {
     padding: 5px 10px 5px 10px;
     margin: 6px 0 3px 0;
     border-radius: .3rem;
+    border: 2px solid transparent;
     color: var(--fourth-color);
 }
 
 a.btn-direct:hover {
+    color: var(--fourth-color);
+}
+
+button.btn-copy {
+    display: inline-block;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #D8D2CB;
+    padding: 5px 10px 5px 10px;
+    margin: 6px 0 3px 0;
+    border-radius: .3rem;
+    border: 2px solid #000;
+    color: #000;
+}
+
+button.btn-copy:hover {
+    background-color: #000;
     color: var(--fourth-color);
 }
