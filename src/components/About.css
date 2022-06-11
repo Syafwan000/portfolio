@@ -1,4 +1,16 @@
+.about-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 !important;
+    margin: 0 75px 0 75px !important;
+}
+
 .about-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
     width: 300px;
 }
 
@@ -48,4 +60,74 @@
 .certificates-ratio img {
     width: 210px;
     border-radius: .25rem;
+    cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+    .about-wrapper {
+        margin: 0 20px 0 20px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .about-wrapper {
+        margin: 0 20px 0 20px !important;
+        flex-direction: column !important;
+        justify-content: start;
+    }
+
+    .about-left {
+        align-items: flex-start;
+    }
+
+    .about-right {
+        width: 100%;
+    }
+
+    .certificates-wrapper {
+        height: 255px;
+    }
+
+    .certificates-ratio img {
+        width: 260px;
+    }
+}
+
+@media (max-width: 992px) {
+    .certificates-ratio img {
+        width: 200px;
+    }
+
+    .about-left h3 {
+        font-size: 40px;
+    }
+
+    .about-left h4 {
+        font-size: 16px;
+    }
+
+    .about-right p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .certificates-ratio img {
+        width: 140px;
+    }
+}
+
+@media (max-width: 576px) {
+    .col.certificates-ratio {
+        text-align: center;
+        padding: 0;
+    }
+
+    .certificates-ratio.gap-image img {
+        margin-top: 1.5rem;
+    }
+
+    .certificates-ratio img {
+        width: 300px;
+    }
 }

@@ -4,7 +4,7 @@ import "./Footer.css";
 function Footer() {
     return (
         <>
-            <footer className="d-flex justify-content-between px-4">
+            <footer className="px-4">
                 <div className="foot-left d-flex">
                     <p>Muhammad Syafwan Ardiansyah &copy; 2022</p>
                 </div>

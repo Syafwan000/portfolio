@@ -25,13 +25,13 @@ function Home() {
             <Helmet>
                 <title>Muhammad Syafwan Ardiansyah</title>
             </Helmet>
-            <Container className="d-flex justify-content-between">
-                <div className="home-left d-flex justify-content-center  flex-column">
+            <Container fluid className="home-wrapper">
+                <div className="home-left animate__animated animate__fadeInLeft">
                     <h3>Hi there <img width="35" src={Hi} alt="Hi" />, my name is</h3>
                     <h2><span className="name-hover">Muhammad</span><br /><span className="name-hover">Syafwan</span><br /><span className="name-hover">Ardiansyah</span></h2>
                     <Link className="btn-download text-center" to={CVDoc} target="_blank" rel="noreferrer" download><AiFillFileText />&nbsp;&nbsp;Download CV</Link>
                 </div>
-                <div className="home-right d-flex align-items-center">
+                <div className="home-right animate__animated animate__fadeIn animate__slower">
                     <img className="home-image" src={image} onMouseEnter={setAvatarReal} onMouseLeave={setAvatarAnimation} alt="Avatar" />
                 </div>
             </Container>

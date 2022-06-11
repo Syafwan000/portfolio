@@ -1,14 +1,13 @@
-import { AiOutlineArrowUp, AiOutlineArrowDown } from "react-icons/ai";
 import { Link, useLocation } from "react-router-dom";
-import "./SideVertical.css";
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
+import "./NavBot.css";
 
-function SideVertical(props) {
+function NavBot() {
     var numberPage;
     var titlePage;
     var directUp;
     var directDown;
     const { pathname } = useLocation();
-    const date = new Date().toISOString().slice(0, 10);
 
     switch(pathname) {
         case "/":
@@ -76,23 +75,22 @@ function SideVertical(props) {
 
     return (
         <>
-            <div className="side-vertical">
-                <div className="upper-side d-flex">
-                    <p className="side-title">{titlePage}</p>
-                    <p className="side-date">{date}</p>
+            <footer className="navbot px-4">
+                <div className="navbot-left d-flex">
+                    <p className="navbot-title">{titlePage}</p>
+                    <p className="navbot-number">{numberPage} <span className="disabled-color">/ 05</span></p>
                 </div>
-                <div className="lower-side d-flex">
-                    <p className="side-number">{numberPage} <span className="disabled-color">/ 05</span></p>
-                    <Link to={directUp} className="d-flex align-items-center pb-3 arrow">
-                        <AiOutlineArrowUp />
+                <div className="navbot-right d-flex">
+                    <Link to={directUp} className="d-flex align-items-center arrow">
+                        <AiOutlineArrowLeft />
                     </Link>
-                    <Link to={directDown} className="d-flex align-items-center arrow">
-                        <AiOutlineArrowDown />
+                    <Link to={directDown} className="d-flex align-items-center ps-4 arrow">
+                        <AiOutlineArrowRight />
                     </Link>
                 </div>
-            </div>
+            </footer>
         </>
     )
 }
 
-export default SideVertical;
+export default NavBot;

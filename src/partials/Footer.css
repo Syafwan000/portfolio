@@ -6,7 +6,8 @@ footer {
     padding-top: 16px;
     padding-bottom: 16px;
     background-color: var(--fourth-color);
-    /* border-top: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
 }
 
 .foot-right, .foot-left {
@@ -33,4 +34,10 @@ footer {
 
 .foot-icon {
     font-size: 16px;
+}
+
+@media (max-width: 992px) {
+    footer {
+        display: none !important;
+    }
 }

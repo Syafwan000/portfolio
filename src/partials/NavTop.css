@@ -1,13 +1,18 @@
 .navtop {
     background-color: var(--fourth-color);
-    /* border-bottom: 1px solid black; */
 }
 
-.navtop-brand {
+.navtop-brand a {
     font-family: 'Source Serif Pro', serif;
     font-size: 28px !important;
     font-weight: 600;
-    cursor: default;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navtop-brand a:hover {
+    color: #000;
 }
 
 i#normal {
@@ -29,4 +34,70 @@ i#normal {
 
 .navtop-list a:hover {
     color: #000;
+}
+
+.toogle-menu {
+    display: none;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    background: var(--third-color);
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.menu-close {
+    display: flex;
+    flex-direction: column;
+    padding: 28px 24px !important;
+}
+
+.menu-list {
+    margin: 25px 0 25px 0;
+}
+
+.menu-list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    margin: 25px 0 25px 0;
+}
+
+.menu-list a.active {
+    color: var(--first-color) !important;
+    font-style: italic;
+    text-decoration: line-through;
+    border-bottom: none;
+}
+
+.menu-list a:hover {
+    text-decoration: line-through;
+    font-style: italic;
+    color: var(--second-color);
+}
+
+@media (max-width: 992px) {
+    .navtop-list {
+        display: none !important;
+    }
+
+    .toogle-menu {
+        display: flex;
+    }
+
+    .menu {
+        display: flex;
+    }
 }

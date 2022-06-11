@@ -22,16 +22,16 @@ function Projects() {
             <Helmet>
                 <title>Syafwan - Projects</title>
             </Helmet>
-            <Container>
-                <div className="projects-title">
+            <Container fluid className="projects-container">
+                <div className="projects-title animate__animated animate__zoomIn">
                     <h3>Projects</h3>
                     <h4>───&nbsp;&nbsp;Page <strong>04</strong></h4>
                 </div>
-                <div className="projects-wrapper my-4">
+                <div className="projects-wrapper animate__animated animate__fadeIn animate_slower my-4">
                     <div className="row">
-                        <div className="col">
+                        <div className="col project-col">
                             <div className="project-card">
-                                <img src={Project1} alt="Project 1" />
+                                <img src={Project1} alt="Project 1" loading="lazy" />
                                 <div className="project-content">
                                     <h3>TeyMii</h3>
                                     <p>TeyMii adalah web yang menghubungkan dengan teman/sahabat/orang lain, melalui pesan secara rahasia tanpa diketahui siapa pengirimnya</p>
@@ -45,9 +45,9 @@ function Projects() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col project-col">
                             <div className="project-card">
-                                <img src={Project2} alt="Project 2" />
+                                <img src={Project2} alt="Project 2" loading="lazy" />
                                 <div className="project-content">
                                     <h3>Digital Wedding Invitation - NoShi</h3>
                                     <p>Undangan pernikahan digital dengan dilengkapi fitur kehadiran menggunakan QR Code</p>
@@ -63,9 +63,9 @@ function Projects() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col project-col">
                             <div className="project-card">
-                                <img src={Project3} alt="Project 3" />
+                                <img src={Project3} alt="Project 3" loading="lazy" />
                                 <div className="project-content">
                                     <h3>BisaNgopi</h3>
                                     <p>BisaNgopi merupakan web aplikasi kasir online yang memiliki 3 role yaitu Admin, Manager, dan Cashier. Info lengkap tentang fitur lainnya bisa dilihat di repository github</p>
@@ -79,9 +79,9 @@ function Projects() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col project-col">
                             <div className="project-card">
-                                <img src={Project4} alt="Project 4" />
+                                <img src={Project4} alt="Project 4" loading="lazy" />
                                 <div className="project-content">
                                     <h3>GuessYourCrush</h3>
                                     <p>Web ini merupakan sebuah permainan tebak tebakan, dimana web ini dapat menebak nama teman, crush kamu atau nama yang sedang kamu pikirkan</p>
@@ -94,11 +94,9 @@ function Projects() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="row my-4">
-                        <div className="col">
+                        <div className="col project-col">
                             <div className="project-card">
-                                <img src={Project5} alt="Project 5" />
+                                <img src={Project5} alt="Project 5" loading="lazy" />
                                 <div className="project-content">
                                     <h3>Qur'an Digital</h3>
                                     <p>Proyek ini merupakan qur'an digital (API) yang dapat diakses secara online, bisa diakses dimana saja asal terhubung dengan koneksi internet, dan simpel</p>
@@ -111,9 +109,9 @@ function Projects() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col project-col">
                             <div className="project-card">
-                                <img src={Project6} alt="Project 6" />
+                                <img src={Project6} alt="Project 6" loading="lazy" />
                                 <div className="project-content">
                                     <h3>Mathducation</h3>
                                     <p>Web ini adalah web kalkulator, menghitung diskon, menentukan hasil pangkat</p>
@@ -126,9 +124,9 @@ function Projects() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col project-col">
                             <div className="project-card">
-                                <img src={Project7} alt="Project 7" />
+                                <img src={Project7} alt="Project 7" loading="lazy" />
                                 <div className="project-content">
                                     <h3>Profile Diri</h3>
                                     <p>Proyek profile diri yang berisikan mengenai tentang dan skill, menyerupai portfolio tetapi berbasis mobile</p>
@@ -139,9 +137,9 @@ function Projects() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col project-col">
                             <div className="project-card">
-                                <img src={Project8} alt="Project 8" />
+                                <img src={Project8} alt="Project 8" loading="lazy" />
                                 <div className="project-content">
                                     <h3>WikAbsensi</h3>
                                     <p>Web ini merupakan absensi online bagi para peserta didik, terdapat sistem kehadiran dan juga rombel dan rayon</p>
@@ -154,11 +152,9 @@ function Projects() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="row my-4">
-                        <div className="col">
+                        <div className="col project-col">
                             <div className="project-card">
-                                <img src={Project9} alt="Project 9" />
+                                <img src={Project9} alt="Project 9" loading="lazy" />
                                 <div className="project-content">
                                     <h3>Cafekinton</h3>
                                     <p>Web ini adalah pemesanan menu-menu cafe secara online. proyek ini dikerjakan oleh 3 orang</p>
@@ -172,9 +168,9 @@ function Projects() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col project-col">
                             <div className="project-card">
-                                <img src={Project10} alt="Project 10" />
+                                <img src={Project10} alt="Project 10" loading="lazy" />
                                 <div className="project-content">
                                     <h3>PopCat Click</h3>
                                     <p>Web permainan klik sederhana yang bertema pop cat, permainan ini cukup sederhana hanyak mengspam klik sampai skor yang ingin dicapai</p>
@@ -187,9 +183,9 @@ function Projects() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col project-col">
                             <div className="project-card">
-                                <img src={Project11} alt="Project 11" />
+                                <img src={Project11} alt="Project 11" loading="lazy" />
                                 <div className="project-content">
                                     <h3>MIP Storage</h3>
                                     <p>Proyek pengelolaan barang-barang toko. proyek ini ditujukan kepada para pemilik toko</p>
@@ -201,9 +197,9 @@ function Projects() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col project-col">
                             <div className="project-card">
-                                <img src={Project12} alt="Project 12" />
+                                <img src={Project12} alt="Project 12" loading="lazy" />
                                 <div className="project-content">
                                     <h3>SapuLator</h3>
                                     <p>Proyek ini merupakan proyek web pertama kali yang saya buat, web ini berisikan tool tool perhitungan</p>
@@ -217,10 +213,9 @@ function Projects() {
                                 </div>
                             </div>
                         </div>
-                        <div className="row my-4">
-                            <div className="col">
+                        <div className="col project-col">
                                 <div className="project-card">
-                                    <img src={Project13} alt="Project 13" />
+                                    <img src={Project13} alt="Project 13" loading="lazy" />
                                     <div className="project-content">
                                         <h3>Covidteria</h3>
                                         <p>Proyek ini adalah web kuesioner mengenai Covid-19, dan juga menyajikan data sembuh, terpapar, dan kematian akibat Covid-19 (API)</p>
@@ -235,7 +230,6 @@ function Projects() {
                             </div>
                         </div>
                     </div>
-                </div>
             </Container>
         </>
     )

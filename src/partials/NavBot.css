@@ -1,0 +1,34 @@
+footer.navbot {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: var(--fourth-color);
+    display: none;
+    justify-content: space-between;
+}
+
+.navbot-left p {
+    font-size: 16px;
+    margin: 0;
+    cursor: default;
+}
+
+.navbot-number {
+    font-family: 'Roboto Mono', monospace;
+    padding-left: 10px;
+}
+
+.navbot-title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    color: #000;
+}
+
+@media (max-width: 992px) {
+    footer.navbot {
+        display: flex !important;
+    }
+}

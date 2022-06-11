@@ -1,21 +1,43 @@
-import { Route, Routes, useLocation } from 'react-router-dom';
-import Home from './components/Home';
-import About from './components/About';
-import Skills from './components/Skills';
+import { Route, Routes } from 'react-router-dom';
+import { useState } from "react";
+import { Spinner } from 'react-bootstrap';
+import SideVertical from './partials/SideVertical';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Skills from './components/Skills';
+import About from './components/About';
 import NavTop from './partials/NavTop';
-import SideVertical from './partials/SideVertical';
+import NavBot from './partials/NavBot';
 import Footer from './partials/Footer';
+import Home from './components/Home';
+import "./App.css";
 
 function App() {
-  const { pathname } = useLocation();
+  const [preload, setPreload] = useState(true);
+
+  setTimeout(function() {
+    setPreload(false);
+  }, 2000);
+
+  if(preload) {
+    return (
+      <>
+        <div className="preload">
+          <h1>
+            <strong>Syaf</strong><i>wan</i>.
+          </h1>
+          <p>«─────»</p>
+          <Spinner animation="grow" />
+        </div>
+      </>
+    )
+  }
 
   return (
     <>
       <NavTop />
       <div className="d-flex">
-      <SideVertical>{pathname}</SideVertical>
+      <SideVertical />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
@@ -25,6 +47,7 @@ function App() {
         </Routes>
       </div>
       <Footer />
+      <NavBot />
     </>
   )
 }

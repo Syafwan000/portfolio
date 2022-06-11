@@ -1,0 +1,15 @@
+.preload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--fourth-color);
+    height: 100vh;
+    width: 100%;
+}
+
+.preload h1 {
+    font-family: 'Source Serif Pro', serif;
+    margin: 0;
+    cursor: default;
+}

@@ -1,4 +1,6 @@
 .side-vertical {
+    display: flex;
+    justify-content: space-between;
     height: 550px;
     padding: 14px 20px;
     writing-mode: vertical-rl;
@@ -33,4 +35,10 @@ a.arrow:hover {
 
 .side-title, .side-date, .side-number {
     cursor: default;
+}
+
+@media (max-width: 992px) {
+    .side-vertical {
+        display: none !important;
+    }
 }

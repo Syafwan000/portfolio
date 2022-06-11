@@ -1,3 +1,7 @@
+.projects-container {
+    margin: 0 10px 0 10px !important;
+}
+
 .projects-title h3 {
     font-family: 'Archivo', sans-serif;
     font-weight: 800;
@@ -21,6 +25,7 @@
     background-color: var(--third-color);
     border-radius: .3rem;
     padding-bottom: 16px;
+    margin-top: 16px;
 }
 
 .project-card img {
@@ -87,4 +92,43 @@ span#tech-stack {
     margin-right: 6px;
     padding: 4px 8px 4px 8px;
     border-radius: .3rem;
+}
+
+@media (max-width: 1200px) {
+    .col.project-col {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .projects-container {
+        margin: 0 !important;
+    }
+
+    .projects-title {
+        padding-left: 10px;
+    }
+    
+    .projects-title h3 {
+        font-size: 40px;
+    }
+
+    .projects-title h4 {
+        font-size: 16px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col.project-col {
+        justify-content: start;
+    }
+
+    .project-card img {
+        width: 225px !important;
+    }
 }
