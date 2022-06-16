@@ -26,7 +26,7 @@ function App() {
           <h1>
             <strong>Syaf</strong><i>wan</i>.
           </h1>
-          <p>«─────»</p>
+          <p>─────</p>
           <Spinner animation="grow" />
         </div>
       </>

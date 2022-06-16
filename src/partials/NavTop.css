@@ -51,6 +51,7 @@ i#normal {
     right: 0px;
     bottom: 0px;
     left: 0px;
+    z-index: 9999999;
 }
 
 .menu-close {
@@ -72,7 +73,8 @@ i#normal {
     font-family: 'Archivo', sans-serif;
     font-weight: 600;
     font-size: 35px;
-    margin: 25px 0 25px 0;
+    margin: 40px 0 40px 0;
+    transition: .3s;
 }
 
 .menu-list a.active {

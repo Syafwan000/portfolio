@@ -79,7 +79,7 @@ i.colored:hover {
     }
 
     i.colored {
-        font-size: 55px;
+        font-size: 60px;
     }
 }
 
@@ -99,10 +99,6 @@ i.colored:hover {
     .skills-left h4 {
         font-size: 16px;
     }
-
-    i.colored {
-        font-size: 50px;
-    }
 }
 
 @media (max-width: 576px) {
@@ -115,7 +111,7 @@ i.colored:hover {
     }
 
     i.colored {
-        font-size: 40px;
+        font-size: 50px;
         margin: 0;
     }
 }

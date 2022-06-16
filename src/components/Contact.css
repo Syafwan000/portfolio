@@ -109,9 +109,7 @@ button.btn-copy:hover {
 
 .contact-container {
     padding-top: 12px;
-    height: 380px !important;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    height: 320px !important;
 }
 
 @media (max-width: 1400px) {
@@ -173,5 +171,11 @@ button.btn-copy:hover {
 @media (max-width: 768px) {
     .contact-left {
         margin-bottom: 10px;
+    }
+
+    .contact-container {
+        height: 450px !important;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 }
