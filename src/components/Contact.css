@@ -128,6 +128,11 @@ button.btn-copy:hover {
     .contact-left {
         align-items: flex-start;
         margin-bottom: 20px;
+        margin-top: 80px;
+    }
+
+    .contact-left h3 {
+        font-size: 40px;
     }
 
     .contact-right {
@@ -140,12 +145,12 @@ button.btn-copy:hover {
         margin: 0 20px 0 20px !important;
     }
 
-    .contact-left h3 {
-        font-size: 40px;
+    .contact-left {
+        display: none;
     }
 
-    .contact-left h4 {
-        font-size: 16px;
+    .contact-container {
+        height: 600px !important;
     }
 
     .email-wrapper, .linkedin-wrapper,
@@ -174,7 +179,7 @@ button.btn-copy:hover {
     }
 
     .contact-container {
-        height: 450px !important;
+        height: 600px !important;
         overflow-y: scroll;
         overflow-x: hidden;
     }

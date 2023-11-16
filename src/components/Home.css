@@ -3,6 +3,7 @@
     justify-content: space-between;
     padding: 0 !important;
     margin: 0 75px 0 75px !important;
+    overflow: hidden;
 }
 
 .home-left {
@@ -43,7 +44,30 @@
 }
 
 img.home-image {
-    width: 400px;
+    width: 250px;
+    margin-right: 40px;
+    margin-left: 40px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: relative;
+}
+
+img.home-image.shadow-1 {
+    transform: rotate(5deg);
+    opacity: 0.8;
+    left: 450px;
+}
+
+img.home-image.shadow-2 {
+    left: 70px;
+    z-index: 9999999;
+}
+
+img.home-image.shadow-3 {
+    transform: rotate(10deg);
+    opacity: 0.7;
+    left: -150px;
+    z-index: -1;
 }
 
 .btn-download {
@@ -66,6 +90,34 @@ img.home-image {
     box-shadow: 0px 0px transparent;
 }
 
+@media (max-width: 1921px) {
+    img.home-image.shadow-1 {
+        left: 530px;
+    }
+    
+    img.home-image.shadow-2 {
+        left: 150px;
+    }
+    
+    img.home-image.shadow-3 {
+        left: -70px;
+    }
+}
+
+@media (max-width: 1540px) {
+    img.home-image.shadow-1 {
+        left: 450px;
+    }
+    
+    img.home-image.shadow-2 {
+        left: 70px;
+    }
+    
+    img.home-image.shadow-3 {
+        left: -150px;
+    }
+}
+
 @media (max-width: 1170px) {
     .home-wrapper {
         margin: 0 !important;
@@ -80,8 +132,7 @@ img.home-image {
     }
 
     .home-left, .home-right {
-        padding-left: 24px;
-        padding-right: 24px;
+        padding: 24px;
     }
 
     .home-left h2 {

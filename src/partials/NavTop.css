@@ -1,5 +1,8 @@
 .navtop {
+    position: fixed !important;
+    width: 100%;
     background-color: var(--fourth-color);
+    z-index: 99999999;
 }
 
 .navtop-brand a {
@@ -91,6 +94,10 @@ i#normal {
 }
 
 @media (max-width: 992px) {
+    .navtop {
+        position: static !important;
+    }
+
     .navtop-list {
         display: none !important;
     }

@@ -30,7 +30,7 @@ function Contact() {
                 <div className="contact-right">
                     <div className="contact-container">
                         <div className="row">
-                            <div className="col contact-col animate__animated animate__slideInLeft">
+                            <div className="col contact-col animate__animated animate__fadeIn animate__slower">
                                 <div className="email-wrapper">
                                     <h3><AiOutlineMail />&nbsp;&nbsp;Email</h3>
                                     <p>muhammadsyafwan04@gmail.com</p>
@@ -39,21 +39,21 @@ function Contact() {
                                     </CopyToClipboard>
                                 </div>
                             </div>
-                            <div className="col contact-col animate__animated animate__slideInRight">
+                            <div className="col contact-col animate__animated animate__fadeIn animate__slower">
                                 <div className="linkedin-wrapper">
                                     <h3><AiFillLinkedin />&nbsp;&nbsp;Linkedin</h3>
                                     <p>Muhammad Syafwan Ardiansyah</p>
                                     <a href="https://www.linkedin.com/in/muhammad-syafwan-ardiansyah-843067214/" target="_blank" rel="noreferrer" className="btn-direct">Visit&nbsp;&nbsp;<AiOutlineArrowRight /></a>
                                 </div>
                             </div>
-                            <div className="col contact-col animate__animated animate__slideInLeft">
+                            <div className="col contact-col animate__animated animate__fadeIn animate__slower">
                                 <div className="github-wrapper">
                                     <h3><AiFillGithub />&nbsp;&nbsp;GitHub</h3>
                                     <p>Syafwan000</p>
                                     <a href="https://github.com/Syafwan000" target="_blank" rel="noreferrer" className="btn-direct">Visit&nbsp;&nbsp;<AiOutlineArrowRight /></a>
                                 </div>
                             </div>
-                            <div className="col contact-col animate__animated animate__slideInRight">
+                            <div className="col contact-col animate__animated animate__fadeIn animate__slower">
                                 <div className="instagram-wrapper">
                                     <h3><AiFillInstagram />&nbsp;&nbsp;Instagram</h3>
                                     <p>syafffwan</p>

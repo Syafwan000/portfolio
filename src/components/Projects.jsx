@@ -27,7 +27,7 @@ function Projects() {
                     <h3>Projects</h3>
                     <h4>───&nbsp;&nbsp;Page <strong>04</strong></h4>
                 </div>
-                <div className="projects-wrapper animate__animated animate__fadeIn animate_slower my-4">
+                <div className="projects-wrapper animate__animated animate__fadeIn animate_slower">
                     <div className="row">
                         <div className="col project-col">
                             <div className="project-card">

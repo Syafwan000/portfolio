@@ -25,4 +25,5 @@
 
 body {
   background-color: var(--fourth-color);
+  overflow-y: hidden;
 }

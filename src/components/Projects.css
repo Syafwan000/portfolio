@@ -1,5 +1,6 @@
 .projects-container {
     margin: 0 10px 0 10px !important;
+    padding: 80px 0 80px 0;
 }
 
 .projects-title h3 {
@@ -99,23 +100,25 @@ span#tech-stack {
         display: flex;
         justify-content: center;
     }
+
+    .projects-title h3 {
+        font-size: 40px;
+    }
 }
 
 @media (max-width: 992px) {
     .projects-container {
         margin: 0 !important;
+        padding: 0;
+    }
+
+    .projects-wrapper {
+        height: 600px;
     }
 
     .projects-title {
         padding-left: 10px;
-    }
-    
-    .projects-title h3 {
-        font-size: 40px;
-    }
-
-    .projects-title h4 {
-        font-size: 16px;
+        display: none;
     }
 
     .project-card {

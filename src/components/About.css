@@ -16,6 +16,7 @@
 
 .about-right {
     width: 750px;
+    padding: 100px 0 100px 0;
 }
 
 .about-left h3, .about-left h4 {
@@ -36,8 +37,9 @@
 
 .about-right p {
     font-family: 'Manrope', sans-serif;
-    font-size: 20px;
-    margin-bottom: 24px;
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 12px;
     cursor: default;
 }
 
@@ -49,10 +51,29 @@
     cursor: default;
 }
 
+.tabs {
+    display: flex;
+}
+
+.btn-tabs {
+    width: 100%;
+    padding: 4px 0 4px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.btn-tabs.active-tabs {
+    border-bottom: 3px solid #000;
+}
+
 .certificates-wrapper {
-    height: 365px;
+    height: 330px;
     padding: 0px 12px 12px 12px;
-    margin-top: 8px;
+    margin-top: 20px;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -61,6 +82,23 @@
     width: 210px;
     border-radius: .25rem;
     cursor: pointer;
+}
+
+.experience-wrapper {
+    height: 330px;
+    margin-top: 50px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.experience-wrapper h3 {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+}
+
+.experience-wrapper ul {
+    font-size: 18px;
+    font-family: 'Manrope', sans-serif;
 }
 
 @media (max-width: 1400px) {
@@ -78,10 +116,16 @@
 
     .about-left {
         align-items: flex-start;
+        margin-top: 80px;
+    }
+
+    .about-left h3 {
+        font-size: 40px;
     }
 
     .about-right {
         width: 100%;
+        padding: 0;
     }
 
     .certificates-wrapper {
@@ -94,8 +138,28 @@
 }
 
 @media (max-width: 992px) {
+    .about-left {
+        display: none;
+    }
+
+    .about-right {
+        padding: 0;
+    }
+
+    .btn-tabs {
+        font-size: 18px;
+    }
+
     .certificates-ratio img {
         width: 200px;
+    }
+
+    .experience-wrapper {
+        margin-top: 30px;
+    }
+
+    .experience-wrapper ul {
+        font-size: 16px;
     }
 
     .about-left h3 {

@@ -2,7 +2,7 @@ import { AiOutlineArrowUp, AiOutlineArrowDown } from "react-icons/ai";
 import { Link, useLocation } from "react-router-dom";
 import "./SideVertical.css";
 
-function SideVertical(props) {
+function SideVertical() {
     var numberPage;
     var titlePage;
     var directUp;
